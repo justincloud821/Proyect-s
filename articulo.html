@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barroco Copy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .detalle-barroco {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 30px;
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        .detalle-barroco img {
+            width: 100%;
+            max-width: 480px;
+            border-radius: 12px;
+            object-fit: cover;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+        }
+        .detalle-barroco.reverse {
+            flex-direction: row-reverse;
+        }
+        .detalle-contenido {
+            flex: 1;
+            min-width: 280px;
+        }
+        .detalle-contenido h1,
+        .detalle-contenido h4 {
+            margin: 0 0 18px;
+            font-family: 'Playfair Display', serif;
+        }
+        .detalle-contenido h1 {
+            font-size: 2.8rem;
+            line-height: 1.1;
+        }
+        .detalle-contenido p {
+            color: #333;
+            line-height: 1.7;
+            margin-bottom: 18px;
+            font-size: 1rem;
+        }
+        .detalle-contenido .cta-buton {
+            display: block;
+            margin: 1.5rem auto 0;
+        }
+        @media (max-width: 860px) {
+            .detalle-barroco {
+                flex-direction: column;
+                text-align: center;
+            }
+            .detalle-contenido {
+                width: 100%;
+            }
+            .detalle-barroco img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">¡Bienvenido!</div>
+            <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#Propiedades">Propiedades</a></li>
+                <li><a href="Informaciony contactos.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="fade-section">
+        <section class="detalle-barroco">
+            <img src="IMGs/Articulo1.jpg" alt="El Barroco">
+            <div class="detalle-contenido">
+                <h1>El Barroco</h1>
+                <h4>Introducción</h4>
+                <p>El nombre “barroco”, según algunas teorías, proviene de la palabra en portugués usada para las perlas que tenían alguna deformidad o irregularidad.
+                   De allí que inicialmente el nombre se empleara para referir a cierto estilo artístico recargado, grandilocuente y excesivo. Posteriormente, este término
+                    se usó para aludir a una forma “degenerada” del Renacimiento y, finalmente, terminó siendo considerado como la negación de lo clásico.</p>
+                <p> El Barroco fue un período de la historia de la cultura en Occidente que abarcó el siglo XVII y principios del XVIII y marcó un cambio en la manera de concebir el arte. Tuvo impacto en numerosas áreas de la cultura y del saber como las bellas artes (arquitectura, pintura, escultura), las letras (literatura, poesía), y la filosofía.</p>
+                
+            </div>
+        </section>
+
+        <section class="detalle-barroco reverse">
+            <img src="IMGs/Articulo2.jpg" alt="Carácter barroco">
+            <div class="detalle-contenido">
+                <h1>Profundizacion</h1>
+                <h4>Contraste y ornamentación</h4>
+                <p>El estilo barroco se caracterizó por la ornamentación sobrecargada, la expresión exagerada de las pasiones, la exuberancia, el detalle elaborado, la pompa
+                     y el contraste. Surgió en una época de tensiones tras la reforma protestante, la contrarreforma y el auge de las monarquías absolutistas, y se dio tanto 
+                     en Europa occidental como en sus colonias de Latinoamérica, a partir del siglo XVII, tras el Renacimiento.</p>
+                     <p>En el año 1527 ocurrió en Europa un hecho violento conocido como el Saco de Roma. Este suceso desencadenó una sacudida de los valores humanistas que 
+                        habían florecido durante el Renacimiento, y dio lugar a un nuevo modo de entender la vida y el arte. La respuesta artística fue una corriente conocida 
+                        como manierismo, que desafiaba los valores clásicos y perduró hasta los primeros años del siglo XVII, cuando apareció el Barroco.</p>
+                    
+            </div>
+        </section>
+
+
+ <section class="detalle-barroco reverse">
+            <div class="detalle-contenido">
+                        <p>Mientras el arte renacentista estaba inspirado en la armonía clásica: la simetría, el equilibrio y la proporción, el Barroco propuso todo lo contrario: 
+                            desmesura, asimetría, exageración, dramatismo, ostentación y distorsión de las formas. El origen del Barroco se remonta al período italiano conocido
+                             como Seicento, y su nombre durante mucho tiempo fue empleado de manera despectiva para referir un arte recargado, caprichoso, engañoso, imperfecto e 
+                             incluso de mal gusto.</p>
+                             <p>Luego del siglo XIX, el término “barroco” se revalorizó y actualmente se emplea no solo para hacer alusión a este período, sino como un adjetivo 
+                                para aludir a manifestaciones artísticas que no se rigen por las formas estéticas del clasicismo.</p>
+            
+            </div>
+        </section>
+
+
+
+
+
+        <section id="Caracteristicas" class="detalle-barroco">
+            <img src="IMGs/Articulo3.jpg" alt="Contenido barroco">
+            <div class="detalle-contenido">
+                <h1>Caracteristicas</h1>
+                <h2>El Barroco cambió radicalmente el modo de hacer arte y de pensar la cultura. Algunas de sus principales características fueron:</h2>
+               <h4>1. Se oponía a las formas artísticas y valores del Renacimiento
+                </h4>
+                <p>El Renacimiento abarcó temas como el amor y la belleza y se caracterizó por rescatar la cultura clásica, el antropocentrismo, 
+                    la búsqueda de la perfección, la simetría y las representaciones idealistas. El Barroco, por el contrario, estuvo teñido por 
+                    el pesimismo, la angustia y la aflicción, estados que se vieron reflejados en obras dramáticas y exageradas. 
+                </p>
+            </div>
+        </section>
+
+
+        <section class="detalle-barroco">
+            <div class="detalle-contenido">
+               <h2>2. Ponía el centro en la subjetividad y la emoción individual
+                </h2>
+                <p>En lugar de la representación de ideales (como bondad, belleza o perfección), el Barroco buscaba reflejar pasiones
+                     y situaciones subjetivas para despertar emociones intensas. Ponía el énfasis en las formas enérgicas, la exuberancia, 
+                     la asimetría, el contraste y los efectos dramáticos obtenidos por efecto del detalle, el claroscuro, la textura o los 
+                     recursos poéticos. 
+                    </p>
+
+                    <h2>3. Exaltaba los valores de la religión y de la monarquía
+                    </h2>
+                    <p>Las monarquías absolutistas y la Iglesia católica fueron grandes mecenas del Barroco, por lo cual sus expresiones
+                         artísticas funcionaron como medio de propaganda frente a la creciente amenaza del protestantismo. Con este objetivo 
+                         se construyeron grandes palacios, iglesias y catedrales que buscaban exaltar los referentes nacionales y religiosos.
+                         </p>
+
+                         <h2>4. Produjo obras ostentosas y complejas
+                         </h2>
+                         <p>El Barroco se caracterizó por hacer foco en los detalles y generar piezas exuberantes, sugerentes y recargadas de
+                             ornamentos. Se suele relacionar al Barroco con el vocablo latino horror vacui (miedo al vacío), que consiste en 
+                             llenar por completo una superficie con decorado o figuras, sin dejar ningún espacio vacío.
+                            </p>
+
+                            <h2>5. Representó un cambio cultural total</h2>
+                            <p>El Barroco no fue solo un movimiento, sino una forma diferente de concebir y hacer arte. Se extendió por todo 
+                                el continente europeo y sus colonias y tuvo exponentes en todos los campos y disciplinas artísticas, desde la pintura
+                                 hasta la música, pasando por la escultura, la arquitectura y la literatura.
+                                </p>
+            </div>
+        </section>
+
+
+
+
+    </section>
+
+   <section class="detalle-barroco reverse">
+            
+    <img src="IMGs/imgbarroco.jpg" alt="Carácter barroco">
+            <div class="detalle-contenido">
+                <h1>Pintura del Barroco</h1>
+                <h2>El Barroco buscaba rescatar los valores de la Iglesia católica.
+                     [Peter Paul Rubens, Daniel en el foso de los leones, 1615]</h2>
+                  <p>La pintura fue una de las expresiones artísticas más desarrolladas y de mayor diversidad durante el Barroco.
+                  Por un lado, se destacó la pintura religiosa llevada adelante por el catolicismo, que buscó propagar y defender
+                   su fe frente a la amenaza de la reforma luterana (que marcó el comienzo del protestantismo).
+                  La pintura promovida por la burguesía protestante, por su parte, se caracterizó por la producción de paisajes y escenas de la vida cotidiana, además de los temas religiosos, históricos y mitológicos.
+                  Algunos de los principales representantes del Barroco en pintura fueron: Diego Velázquez (1599-1660) en España, Rembrandt (1606-1669) en los Países Bajos y Michelangelo Caravaggio (1571-1610) en Italia 
+                 </p>
+                
+                    </div>
+
+
+         </section>
+   
+
+  <section class="detalle-barroco">
+            <div class="detalle-contenido">
+               
+                <h2>Los principales rasgos que caracterizaron a la pintura barroca fueron:
+            </h2>
+                  
+            <p>1. Utilizaba contrastes y juegos de luces y sombras (claroscuro). Los mayores cultores de esta técnica son conocidos como
+                 tenebristas y su máximo exponente fue el italiano Michelangelo Caravaggio.</p>
+                   
+                 <p>2. Buscaba el realismo en el detalle y representaba aspectos cotidianos, combinados con elementos dramáticos o simbólicos.</p>
+
+                 <p>3. Usaba el movimiento y la asimetría a través de escorzos, composiciones abiertas y diagonales.</p>
+
+                   <p>4. Para lograr efectos fieles de profundidad, utilizaba técnicas como el sfumato (transición imperceptible entre los colores
+                     al superponerlos delicadamente) y la perspectiva.</p>
+
+            </div>
+        </section>
+ 
+
+
+
+        <section id="Caracteristicas" class="detalle-barroco">
+            <img src="IMGs/Articulo6.jpg" alt="Contenido barroco">
+            <div class="detalle-contenido">
+                <h1>Causas del fin</h1>
+                <h2>A mediados y finales del siglo XVIII, el barroco empieza a perder fuerza y da paso a nuevas corrientes, aunque su influencia permanece.</h2>
+               
+                <h4>1. Se oponía a las formas artísticas y valores del Renacimiento
+                </h4>
+
+                <p> llega la Ilustración, un movimiento que valora la razón, la claridad, el orden, la sencillez y el conocimiento lógico. El estilo recargado,
+                     oscuro y emocional del barroco ya no responde a los gustos ni a la forma de pensar de la nueva época. Se considera excesivo, complicado y desordenado.</p>
+                     
+            </div>
+        </section>
+
+
+
+         <section id="Caracteristicas" class="detalle-barroco">
+            <div class="detalle-contenido">
+                <p> El estilo se vuelve más exagerado aún en su etapa final (lo que se llama "barroco tardío" o "churrigueresco"), hasta que se agota y se simplifica.
+                         Se abandonan los juegos de palabras complejos y la oscuridad expresiva.</p>
+                        
+                         <h> Aunque deja de ser la corriente dominante, la poesía barroca no desaparece:</h>
+
+                         <p> Dejó una riqueza inmensa en recursos lingüísticos y expresivos que luego usarán autores posteriores.
+                            Sus temas sobre el tiempo, la muerte, el desengaño y la complejidad humana siguen presentes en la literatura de todos los tiempos.
+                            Autores como Góngora, Quevedo o Sor Juana pasaron a ser clásicos, y siguen estudiándose como lo mejor de la literatura en español.
+                            Sentó las bases para entender la literatura como una forma compleja de expresión, donde la forma y el contenido están profundamente unidos.
+</p>
+</div>
+         </section>
+
+
+ <section id="Caracteristicas" class="detalle-barroco">
+            <div class="detalle-contenido">
+                <button class="cta-buton" onclick="window.location.href='index.html'">Volver al inicio</button>
+</div>
+         </section>
+         
+
+
+
+
+    </main>
+
+
+
+
+
+
+    <script>
+        window.addEventListener('load', () => {
+            document.body.classList.add('site-loaded');
+        });
+    </script>
+<script>
+const navToggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelector('.nav-links');
+if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+        const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+        navToggle.setAttribute('aria-expanded', String(!expanded));
+        navLinks.classList.toggle('nav-open');
+    });
+}
+</script>
+</body>
+</html>

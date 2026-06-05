@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información y Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">INAC PROYECT'S</div>
+            <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contact-wrapper">
+            <section class="characters-section">
+                <h2>¡Bienvenido!</h2>
+                <p> Toda la información que ofrecemos está respaldada por fuentes bibliográficas autorizadas y actualizadas, que aseguran
+                     un contenido confiable en línea con nuestros principios editoriales. Nos encantaría escucharte. Si tienes preguntas, 
+                     sugerencias o simplemente quieres saludar, completa el formulario al lado y nos pondremos en contacto lo antes posible. 
+                     Tu opinión es muy importante para nosotros.</p>
+                     <p> - Castria, F., & Stefano Zuffi. (1999). La pintura barroca. Electa.</p>
+                     <p> - Eco, Umberto (2004). Historia de la belleza. Lumen.</p>
+                     <p> - Souriau, Étienne (1998). Diccionario de Estética. Akal</p>
+
+            
+            
+            
+            </section>
+            
+
+            <section class="contact-form-section">
+                <div class="contact-card">
+                    <h2>Contacto</h2>
+                    <form id="contactForm">
+                        <input type="text" id="nombre" placeholder="Nombre" required>
+                        <input type="email" id="email" placeholder="Correo electrónico" required>
+                        <textarea id="mensaje" placeholder="Mensaje" required rows="5"></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+
+        <section class="detalle-barroco reverse">
+                       <div class="detalle-contenido">
+                <h1>© Información</h1>
+                <h4>Autores destacados en este Proyecto</h4>
+                <p>- Justin Rosales: Correo electrónico: justinsteven821@gmail.com</p>
+                <p>- Manuel Dimas: Correo electrónico: panchovaranerox@gmail.com</p>
+                <p>- Keyli Isabel: Correo electrónico: isabelvill004@gmail.com</p>
+                <p>- Anderson Beltran : 10191969@clases.edu.sv</p>
+                
+            </div>
+        </section>
+
+
+        <div class="confirmation-modal" id="confirmationModal">
+            <div class="confirmation-content">
+                <div class="checkmark">✓</div>
+                <h3>¡Enviado!</h3>
+                <p>Tu mensaje ha sido recibido exitosamente. Nos pondremos en contacto pronto.</p>
+            </div>
+        </div>
+    </main>
+    <main><footer>
+        <p>&copy; 2023 La Literatura Barroca. Todos los derechos reservados.</p>
+        </footer>
+    </main>
+    </footer>
+
+    <script>
+        // Manejar envío del formulario
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const modal = document.getElementById('confirmationModal');
+            modal.classList.add('show');
+
+            // Limpiar formulario
+            this.reset();
+
+            // Redirigir después de 3 segundos
+            setTimeout(() => {
+                window.location.href = 'index.html';
+            }, 3000);
+        });
+
+        // Activar animación de carga
+        window.addEventListener('load', () => {
+            document.body.classList.add('site-loaded');
+        });
+    </script>
+<script>
+const navToggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelector('.nav-links');
+if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+        const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+        navToggle.setAttribute('aria-expanded', String(!expanded));
+        navLinks.classList.toggle('nav-open');
+    });
+}
+</script>
+</body>
+</html>
